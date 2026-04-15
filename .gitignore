@@ -1,0 +1,24 @@
+node_modules/
+.claude
+
+# Environment configuration (contains secrets)
+.env
+.env.local
+.env.*.local
+
+# Runtime cache and data
+cache/
+*.log
+
+# Docker override files
+docker-compose.override.yml
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

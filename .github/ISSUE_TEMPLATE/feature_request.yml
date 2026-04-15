@@ -1,0 +1,18 @@
+name: Feature Request
+description: Suggest an idea
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What would you like?
+      description: Describe the feature and why it would be useful
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example config or usage
+      description: If applicable, show how you'd expect to use this
+      render: yaml
