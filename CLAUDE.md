@@ -46,11 +46,7 @@ Docker Compose uses `.env` for secrets (gitignored). Three profiles:
 
 ## CI/CD
 
-GitHub Actions in `.github/workflows/`:
-- `docker-build.yml` - Builds and pushes to GHCR + Docker Hub on tag push
-- `test.yml` - Runs tests
-
-Docker Hub secrets needed: `DOCKERHUB_USERNAME`, `DOCKERHUB_TOKEN`
+No automated workflows yet. Tests and Docker build/push pipelines need to be set up.
 
 ## Common Pitfalls
 
