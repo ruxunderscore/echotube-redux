@@ -1,6 +1,6 @@
 # EchoTube
 
-Lightweight, self-hosted bot that monitors YouTube channels/playlists via RSS for new videos matching keywords, then posts notifications to Discord webhooks. Single Docker container, Node.js 20+, zero API keys needed.
+Lightweight, self-hosted bot that monitors YouTube channels/playlists via RSS for new videos matching keywords, then posts notifications to Discord webhooks. Single Docker container, Node.js 24+, zero API keys needed.
 
 ## Project Structure
 
@@ -18,7 +18,7 @@ src/
 ## Key Design Decisions
 
 - **RSS only, no YouTube API** - Uses public feeds (`/feeds/videos.xml?channel_id=` / `?playlist_id=`), limited to 25 most recent videos per feed
-- **Single dependency** - `@rowanmanning/feed-parser` for XML; everything else is native Node.js 20+ (fetch, ESM, AbortController)
+- **Single dependency** - `@rowanmanning/feed-parser` for XML; everything else is native Node.js 24+ (fetch, ESM, AbortController)
 - **Queue-based Discord rate limiting** - Strict 5 requests per 2 seconds with exponential backoff retry
 - **Ultra-clean embeds** - Channel name, video title, large thumbnail only. No footer, timestamp, or branding.
 - **Initial run behavior** - First startup marks all existing videos as seen (no spam). `ET_DEVELOPMENT_MODE=true` posts one video per source instead.
