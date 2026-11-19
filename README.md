@@ -1,13 +1,11 @@
 # EchoTube 🎬📺
 
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/richardthornton) [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/richardthornton)
-
 **EchoTube** is a lightweight, self-hosted bot that monitors YouTube channels or playlists for new videos containing specific keywords and posts ultra-clean notifications to Discord via webhooks.
 
-Built with modern Node.js 20+ features, zero external dependencies (except RSS parser), and production-ready security.
+Built with modern Node.js 24+ features, zero external dependencies (except RSS parser), and production-ready security.
 
 [![Docker Hub](https://img.shields.io/docker/pulls/ruxunderscore/echotube-redux)](https://hub.docker.com/r/ruxunderscore/echotube-redux)
-[![GitHub release](https://img.shields.io/github/release/ruxunderscore/echotube-redux)](https://github.com/ruxunderscore/echotube-redux/releases)
+[![Docker Image Version](https://img.shields.io/docker/v/ruxunderscore/echotube-redux?sort=semver)](https://hub.docker.com/r/ruxunderscore/echotube-redux/tags)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -190,16 +188,6 @@ Still stuck? [Open an issue](https://github.com/ruxunderscore/echotube-redux/iss
 
 ---
 
-## 💖 Support This Project
-
-If EchoTube saves you time and makes your Discord server better, consider buying me a coffee! Your support helps keep this project maintained and improves it for everyone.
-
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/richardthornton) [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/richardthornton)
-
-Every contribution, no matter how small, helps maintain and improve EchoTube for the community. Thank you! 🙏
-
----
-
 ## 🤝 Contributing
 
 Want to make EchoTube even better? We'd love your help!
@@ -235,6 +223,6 @@ MIT License © [Richard Thornton](https://github.com/richardthornton) - Use it h
 
 ---
 
-*Made with ❤️ by [Richard Thornton](https://github.com/richardthornton)*
+*Originally created by [Richard Thornton](https://github.com/richardthornton/echotube). Maintained by [ruxunderscore](https://github.com/ruxunderscore).*
 
 **EchoTube**: Clean YouTube notifications for Discord, the way they should be. ✨

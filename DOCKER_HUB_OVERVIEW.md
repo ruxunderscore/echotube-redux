@@ -10,7 +10,7 @@ docker run --rm \
   -e ET_TEST_MODE=true \
   -e ET_CHANNEL_IDS=UCexample1 \
   -e ET_KEYWORDS=minecraft,gaming \
-  richardthornton/echotube:latest
+  ruxunderscore/echotube-redux:latest
 
 # Production deployment
 docker run -d \
@@ -19,7 +19,7 @@ docker run -d \
   -e ET_KEYWORDS=minecraft,gaming \
   -e ET_DISCORD_WEBHOOK_URLS=https://discord.com/api/webhooks/... \
   -v ./cache:/app/cache \
-  richardthornton/echotube:latest
+  ruxunderscore/echotube-redux:latest
 ```
 
 ## Features
@@ -57,7 +57,7 @@ docker run -d \
 ```yaml
 services:
   echotube:
-    image: richardthornton/echotube:latest
+    image: ruxunderscore/echotube-redux:latest
     container_name: echotube
     restart: unless-stopped
     environment:
@@ -108,7 +108,7 @@ docker logs echotube
 docker logs -f echotube
 
 # Debug logging
-docker run -e ET_LOG_LEVEL=DEBUG richardthornton/echotube
+docker run -e ET_LOG_LEVEL=DEBUG ruxunderscore/echotube-redux
 ```
 
 ## Available Tags
@@ -142,9 +142,9 @@ docker run -e ET_LOG_LEVEL=DEBUG richardthornton/echotube
 
 ## Support
 
-- **Documentation**: [GitHub Repository](https://github.com/richardthornton/echotube)
-- **Issues**: [GitHub Issues](https://github.com/richardthornton/echotube/issues)
-- **Source Code**: [GitHub](https://github.com/richardthornton/echotube)
+- **Documentation**: [GitHub Repository](https://github.com/ruxunderscore/echotube-redux)
+- **Issues**: [GitHub Issues](https://github.com/ruxunderscore/echotube-redux/issues)
+- **Source Code**: [GitHub](https://github.com/ruxunderscore/echotube-redux)
 
 ## License
 
