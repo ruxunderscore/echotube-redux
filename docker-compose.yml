@@ -4,7 +4,7 @@
 services:
   # Production deployment
   echotube:
-    image: richardthornton/echotube:latest
+    image: ruxunderscore/echotube-redux:latest
     container_name: echotube
     restart: unless-stopped
     env_file: .env
@@ -21,7 +21,7 @@ services:
 
   # Test mode - safe testing without Discord posting
   echotube-test:
-    image: richardthornton/echotube:latest
+    image: ruxunderscore/echotube-redux:latest
     container_name: echotube-test
     env_file: .env
     environment:
