@@ -4,14 +4,14 @@ Thanks for your interest in contributing!
 
 ## Reporting Bugs
 
-Open a [bug report](https://github.com/richardthornton/echotube/issues/new?template=bug_report.yml) with:
+Open a [bug report](https://github.com/ruxunderscore/echotube-redux/issues/new?template=bug_report.yml) with:
 - What happened vs what you expected
 - Steps to reproduce (with sanitized config - remove webhook URLs)
 - Logs from running with `ET_LOG_LEVEL=DEBUG`
 
 ## Suggesting Features
 
-Open a [feature request](https://github.com/richardthornton/echotube/issues/new?template=feature_request.yml) describing what you'd like and why.
+Open a [feature request](https://github.com/ruxunderscore/echotube-redux/issues/new?template=feature_request.yml) describing what you'd like and why.
 
 ## Code Contributions
 
