@@ -2,7 +2,7 @@
 # Based on Alpine Linux for minimal attack surface
 
 # Build stage
-FROM node:20-alpine AS builder
+FROM node:24-alpine AS builder
 
 # Set working directory
 WORKDIR /app
@@ -14,7 +14,7 @@ COPY package*.json ./
 RUN npm ci --omit=dev && npm cache clean --force
 
 # Production stage
-FROM node:20-alpine AS production
+FROM node:24-alpine AS production
 
 # Create non-root user for security
 RUN addgroup -g 1001 -S echotube && \
