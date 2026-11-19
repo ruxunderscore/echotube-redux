@@ -5,7 +5,7 @@
 Built with modern Node.js 24+ features, zero external dependencies (except RSS parser), and production-ready security.
 
 [![Docker Hub](https://img.shields.io/docker/pulls/ruxunderscore/echotube-redux)](https://hub.docker.com/r/ruxunderscore/echotube-redux)
-[![GitHub release](https://img.shields.io/github/release/ruxunderscore/echotube-redux)](https://github.com/ruxunderscore/echotube-redux/releases)
+[![Docker Image Version](https://img.shields.io/docker/v/ruxunderscore/echotube-redux?sort=semver)](https://hub.docker.com/r/ruxunderscore/echotube-redux/tags)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
