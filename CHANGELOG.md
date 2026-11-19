@@ -7,15 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added
-- GitHub Actions workflows for Docker builds and testing
-- Issue templates, PR template, `CONTRIBUTING.md`, `LICENSE`
-- `.env.example` reference file and `.env` support in docker-compose
+## [2.0.0] - 2026-11-19
+
+First release of the `ruxunderscore/echotube-redux` fork. Includes the upstream changes that were never released after 1.0.1.
 
 ### Changed
+- **Breaking:** Requires Node.js 24+ (base image upgraded to Node 24)
+- Docker image is now published as `ruxunderscore/echotube-redux` on Docker Hub (multi-arch amd64/arm64)
+- Production image no longer bundles npm
+- Refreshed lockfile to fix the fast-xml-parser CVE
+- Repository, issue and image links point to this fork; donation links removed
 - Merged development (`echotube-dev`) and public (`echotube`) repositories into a single repo
 - Docker Compose now uses `.env` file for secrets instead of hardcoded values
 - Trimmed `CLAUDE.md` from ~13KB to ~2.5KB, removing duplication with README
+
+### Added
+- Dependabot for npm, Docker and GitHub Actions
+- Trivy image scan workflow
+- GitHub Actions workflows for Docker builds and testing
+- Issue templates, PR template, `CONTRIBUTING.md`, `LICENSE`
+- `.env.example` reference file and `.env` support in docker-compose
 
 ### Removed
 - `docs/EchoTube_SRS.md` and `IMPLEMENTATION_PLAN.md` (completed, no longer needed)
@@ -53,6 +64,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Comprehensive environment variable validation
 - No API keys or authentication required
 
-[Unreleased]: https://github.com/richardthornton/echotube/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/ruxunderscore/echotube-redux/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/ruxunderscore/echotube-redux/tree/v2.0.0
 [1.0.1]: https://github.com/richardthornton/echotube/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/richardthornton/echotube/releases/tag/v1.0.0
