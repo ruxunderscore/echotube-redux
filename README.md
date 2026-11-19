@@ -6,8 +6,8 @@
 
 Built with modern Node.js 20+ features, zero external dependencies (except RSS parser), and production-ready security.
 
-[![Docker Hub](https://img.shields.io/docker/pulls/richardthornton/echotube)](https://hub.docker.com/r/richardthornton/echotube)
-[![GitHub release](https://img.shields.io/github/release/richardthornton/echotube)](https://github.com/richardthornton/echotube/releases)
+[![Docker image](https://github.com/ruxunderscore/echotube-redux/actions/workflows/docker.yml/badge.svg)](https://github.com/ruxunderscore/echotube-redux/pkgs/container/echotube-redux)
+[![GitHub release](https://img.shields.io/github/release/ruxunderscore/echotube-redux)](https://github.com/ruxunderscore/echotube-redux/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -38,7 +38,7 @@ docker run --rm \
   -e ET_CHANNEL_IDS=UCexample1 \
   -e ET_KEYWORDS=minecraft,gaming \
   -e ET_LOG_LEVEL=DEBUG \
-  richardthornton/echotube:latest
+  ghcr.io/ruxunderscore/echotube-redux:latest
 ```
 
 ### Step 2: Get Your Configuration Ready
@@ -58,14 +58,14 @@ docker run -d \
   -e ET_KEYWORDS=minecraft,gaming,tutorial \
   -e ET_DISCORD_WEBHOOK_URLS=https://discord.com/api/webhooks/... \
   -v ./cache:/app/cache \
-  richardthornton/echotube:latest
+  ghcr.io/ruxunderscore/echotube-redux:latest
 ```
 
 **Option B: Docker Compose (Recommended)**
 ```bash
 # Clone the repo
-git clone https://github.com/richardthornton/echotube.git
-cd echotube
+git clone https://github.com/ruxunderscore/echotube-redux.git
+cd echotube-redux
 
 # Set up your configuration
 cp .env.example .env
@@ -170,8 +170,8 @@ ET_DEVELOPMENT_MODE=true docker-compose up echotube-dev
 ### Custom Build
 Build from source for development:
 ```bash
-git clone https://github.com/richardthornton/echotube.git
-cd echotube
+git clone https://github.com/ruxunderscore/echotube-redux.git
+cd echotube-redux
 docker build -t echotube:custom .
 ```
 
@@ -186,7 +186,7 @@ docker build -t echotube:custom .
 3. **Look at logs**: Run `docker logs echotube` to see what's happening (logs show webhook-specific success/failures)
 4. **Common issues**: Keywords are case-insensitive, RSS feeds only show 25 recent videos, and invalid webhook URLs will cause posting failures
 
-Still stuck? [Open an issue](https://github.com/richardthornton/echotube/issues) and we'll help you out!
+Still stuck? [Open an issue](https://github.com/ruxunderscore/echotube-redux/issues) and we'll help you out!
 
 ---
 
@@ -216,20 +216,15 @@ See our [Contributing Guide](CONTRIBUTING.md) for more details.
 
 ## 📋 Installation Options
 
-**Docker Hub (Recommended)**
-```bash
-docker pull richardthornton/echotube:latest
-```
-
 **GitHub Container Registry**
 ```bash
-docker pull ghcr.io/richardthornton/echotube:latest  
+docker pull ghcr.io/ruxunderscore/echotube-redux:latest
 ```
 
 **From Source**
 ```bash
-git clone https://github.com/richardthornton/echotube.git
-cd echotube && npm install && npm start
+git clone https://github.com/ruxunderscore/echotube-redux.git
+cd echotube-redux && npm install && npm start
 ```
 
 ---

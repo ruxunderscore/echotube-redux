@@ -46,7 +46,7 @@ Docker Compose uses `.env` for secrets (gitignored). Three profiles:
 
 ## CI/CD
 
-No automated workflows yet. Tests and Docker build/push pipelines need to be set up.
+`.github/workflows/docker.yml` builds multi-arch (amd64/arm64) images and pushes to `ghcr.io/ruxunderscore/echotube-redux` on pushes to `main` (`latest`) and `v*` tags (semver tags). PRs build only. No test workflow yet.
 
 ## Common Pitfalls
 
