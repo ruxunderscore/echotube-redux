@@ -1,6 +1,6 @@
 {
   "name": "echotube",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Lightweight YouTube RSS monitor that posts Discord notifications for keyword-matched videos",
   "type": "module",
   "main": "src/index.js",

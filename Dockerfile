@@ -64,7 +64,7 @@ CMD ["node", "src/index.js"]
 # Metadata labels
 LABEL org.opencontainers.image.title="EchoTube" \
       org.opencontainers.image.description="YouTube RSS monitor with Discord webhook notifications" \
-      org.opencontainers.image.version="1.0.0" \
+      org.opencontainers.image.version="2.0.0" \
       org.opencontainers.image.author="Richard Thornton" \
       org.opencontainers.image.source="https://github.com/ruxunderscore/echotube-redux" \
       org.opencontainers.image.documentation="https://github.com/ruxunderscore/echotube-redux/blob/main/README.md" \
