@@ -40,13 +40,13 @@ ET_TEST_MODE=true ET_CHANNEL_IDS=UCxxxxxx ET_KEYWORDS=test npm start
 ```
 
 Docker Compose uses `.env` for secrets (gitignored). Three profiles:
-- Default (`echotube`) - production, pulls from Docker Hub
+- Default (`echotube`) - production, pulls `ruxunderscore/echotube-redux` from Docker Hub
 - `test` profile - test mode, no Discord posting
 - `dev` profile - builds locally, polls every 60s, development mode
 
 ## CI/CD
 
-`.github/workflows/docker.yml` builds multi-arch (amd64/arm64) images and pushes to `ghcr.io/ruxunderscore/echotube-redux` on pushes to `main` (`latest`) and `v*` tags (semver tags). PRs build only. No test workflow yet.
+`.github/workflows/docker.yml` builds multi-arch (amd64/arm64) images and pushes to Docker Hub `ruxunderscore/echotube-redux` (needs repo variable `DOCKERHUB_USERNAME` and secret `DOCKERHUB_TOKEN`) on pushes to `main` (`latest`) and `v*` tags (semver tags). PRs build only. No test workflow yet.
 
 ## Common Pitfalls
 

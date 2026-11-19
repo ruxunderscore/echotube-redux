@@ -6,7 +6,7 @@
 
 Built with modern Node.js 20+ features, zero external dependencies (except RSS parser), and production-ready security.
 
-[![Docker image](https://github.com/ruxunderscore/echotube-redux/actions/workflows/docker.yml/badge.svg)](https://github.com/ruxunderscore/echotube-redux/pkgs/container/echotube-redux)
+[![Docker Hub](https://img.shields.io/docker/pulls/ruxunderscore/echotube-redux)](https://hub.docker.com/r/ruxunderscore/echotube-redux)
 [![GitHub release](https://img.shields.io/github/release/ruxunderscore/echotube-redux)](https://github.com/ruxunderscore/echotube-redux/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -38,7 +38,7 @@ docker run --rm \
   -e ET_CHANNEL_IDS=UCexample1 \
   -e ET_KEYWORDS=minecraft,gaming \
   -e ET_LOG_LEVEL=DEBUG \
-  ghcr.io/ruxunderscore/echotube-redux:latest
+  ruxunderscore/echotube-redux:latest
 ```
 
 ### Step 2: Get Your Configuration Ready
@@ -58,7 +58,7 @@ docker run -d \
   -e ET_KEYWORDS=minecraft,gaming,tutorial \
   -e ET_DISCORD_WEBHOOK_URLS=https://discord.com/api/webhooks/... \
   -v ./cache:/app/cache \
-  ghcr.io/ruxunderscore/echotube-redux:latest
+  ruxunderscore/echotube-redux:latest
 ```
 
 **Option B: Docker Compose (Recommended)**
@@ -216,9 +216,9 @@ See our [Contributing Guide](CONTRIBUTING.md) for more details.
 
 ## 📋 Installation Options
 
-**GitHub Container Registry**
+**Docker Hub**
 ```bash
-docker pull ghcr.io/ruxunderscore/echotube-redux:latest
+docker pull ruxunderscore/echotube-redux:latest
 ```
 
 **From Source**
