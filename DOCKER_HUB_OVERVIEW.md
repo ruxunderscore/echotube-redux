@@ -120,7 +120,7 @@ docker run -e ET_LOG_LEVEL=DEBUG richardthornton/echotube
 ## Architecture
 
 - **Base Image**: Alpine Linux (security-focused, ~20MB final size)
-- **Runtime**: Node.js 20+ with native fetch API
+- **Runtime**: Node.js 24+ with native fetch API
 - **Dependencies**: Minimal (only RSS parser)
 - **User**: Non-root execution (echotube:1001)
 - **Process Manager**: dumb-init for proper signal handling

@@ -1,6 +1,6 @@
 /**
  * Configuration module with environment variable validation
- * Uses Node.js 20+ native environment handling
+ * Uses Node.js 24+ native environment handling
  */
 
 class ConfigError extends Error {

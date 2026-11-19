@@ -2,7 +2,7 @@
 # Based on Alpine Linux for minimal attack surface
 
 # Build stage
-FROM node:20-alpine AS builder
+FROM node:24-alpine AS builder
 
 # Set working directory
 WORKDIR /app
@@ -11,10 +11,10 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --only=production && npm cache clean --force
+RUN npm ci --omit=dev && npm cache clean --force
 
 # Production stage
-FROM node:20-alpine AS production
+FROM node:24-alpine AS production
 
 # Create non-root user for security
 RUN addgroup -g 1001 -S echotube && \
@@ -23,7 +23,9 @@ RUN addgroup -g 1001 -S echotube && \
 # Install security updates
 RUN apk update && apk upgrade && \
     apk add --no-cache dumb-init && \
-    rm -rf /var/cache/apk/*
+    rm -rf /var/cache/apk/* && \
+    rm -rf /usr/local/lib/node_modules/npm /usr/local/lib/node_modules/corepack \
+           /usr/local/bin/npm /usr/local/bin/npx /usr/local/bin/corepack
 
 # Set working directory
 WORKDIR /app
