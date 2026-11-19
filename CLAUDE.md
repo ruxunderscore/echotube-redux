@@ -46,7 +46,9 @@ Docker Compose uses `.env` for secrets (gitignored). Three profiles:
 
 ## CI/CD
 
-No automated workflows yet. Tests and Docker build/push pipelines need to be set up.
+- `.github/workflows/image-scan.yml` builds the image and runs Trivy; fails on fixable CRITICAL CVEs (PRs, pushes to main, weekly).
+- `.github/dependabot.yml` - weekly updates for npm, Docker base image, and GitHub Actions (actions pinned by SHA).
+- No test or Docker push pipeline yet.
 
 ## Common Pitfalls
 
